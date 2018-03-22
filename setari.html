@@ -1,0 +1,106 @@
+<html>
+    <head>
+    <script src="js/jquery-3.2.1.min.js"></script>     
+    <script src="js/constants.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/domUtils.js"></script>
+    <script src="js/setari.js"></script>
+    </head>
+    <body onload="artemis.settingsPage.load()">
+
+    <form onsubmit="artemis.settingsPage.submit(event)" 
+          onreset="artemis.settingsPage.reset(event)">
+        <h2> Informatii jucator </h2>
+        <table>
+        <tr>
+        <td style="width:150px">Nume:</td> 
+        <td><input type="text" id="nameId" placeholder="Nume" style="width:200px;"/></td>
+        </tr>
+        
+        <tr>
+        <td>E-mail:</td>
+        <td><input type="email" id="emailId" placeholder="string@string.string" style="width:200px;" 
+                   pattern="\S+@\S+\.\S+"/></td>
+        </tr>
+        
+        <tr>
+        <td>Descriere:</td>
+        <td><textarea id="aboutMeId" rows="3" placeholder="Descriere" style="width:200px;"></textarea></td>
+        </tr>
+        </table>
+        
+        <hr/>
+
+        <h2> Setari joc </h2>
+        <table>
+        <tr>
+        <td style="width:150px">Nivel:</td> 
+        <td>
+          <label><input type="radio" name="level" id="beginnerId" value="beginner" >Incepator</label><br>
+          <label><input type="radio" name="level" id="mediumId" value="medium" checked>Mediu</label><br>
+          <label><input type="radio" name="level" id="advancedId" value="advanced">Avansat</label>      
+        </td>
+        </tr>
+        </table>
+
+        <br/>
+        
+        <table>
+        <tr>
+        <td style="width:150px">Tipuri de caini:</td> 
+        <td id="dogTypeContainer">
+        </td>
+        </tr>
+        </table>
+        
+        <br/>
+        
+        <table>
+        <tr>
+        <td style="width:150px">Limba:</td> 
+        <td>
+        <select name="lang" id="langId">
+          <option value="ro" id="roId">Romana</option>
+          <option value="en" id="enId">Engleza</option>
+        </select>    
+        </td>
+        </tr>
+        </tr>
+        </table>        
+        
+        <br/>
+        
+        <table>
+        <tr>
+        <td style="width:150px">Volum:</td> 
+        <td><input type="range" id="volumeId" 
+                   onChange = "artemis.settingsPage.volumeChanged(event)"
+                   min="0" max="1" step="0.01"/></td>
+        </tr>
+        </table>
+
+        <br/>
+        
+        <table>
+        <tr>
+        <td style="width:150px">Sunete active:</td> 
+        <td>
+            <select multiple>
+              <option name="sound" value="latrat" id="latratId" selected>Latrat</option>
+              <option name="sound" value="trist" id="tristId" selected>Trist</option>
+              <option name="sound" value="gameOver" id="gameOverId" selected>Game over</option>
+            </select> 
+        </td>
+        </tr>
+        </tr>
+        </table>
+        
+        <br/>
+        <hr/>
+        
+        <input type="submit" value="Salveaza"></input>
+        <input type="reset" value="Reseteaza"></input>    
+        <button onclick="artemis.settingsPage.toMenu(event)">Inapoi</button>
+        </form>
+    </body>
+</html>

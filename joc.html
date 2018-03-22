@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="js/jquery-3.2.1.min.js"></script>    
+        <script src="js/constants.js"></script>
+        <script src="js/domUtils.js"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/debugger.js"></script>
+        <script src="js/dog.js"></script>
+        <script src="js/foodPoint.js"></script>
+        <script src="js/game.js"></script>
+        
+        <style>
+        #progressBarParent {
+          width: 100%;
+          background-color: #ddd;
+        }
+
+        .progressBarClass {
+          width: 1%;
+          height: 30px;
+          background-color: #4CAF50;
+        }
+        </style>
+    </head>
+        
+    <body onload="artemis.game.load()" onkeypress="artemis.game.onKeyPress(event)"  onmousemove="artemis.game.onMouseMove(event)">
+        <div id="progressBarParent">
+          <div id="progressBar"></div>
+        </div>        
+
+        <div id="gameContainer" style="display:none">
+            <div id="stats" style="font-size:20px; font-weight: bold">
+                <div id="scoreDiv"></div>
+                <div id="livesDiv"></div>
+            </div>
+
+            <div id="gameDiv" 
+                style="position: relative; 
+                        height: 600px; 
+                        width: 800px; 
+                        border: 1px solid #000000">
+            </div>
+            
+            <div id="messagesDiv" style="font-size: 30px; font-weight: bold">
+            </div>
+        </div>
+        
+        <div id="debuggerDiv"></div>
+        
+    </body>
+</html>

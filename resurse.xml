@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<resurse>
+    <imagini>
+        <imagine tip="caine" w="20" h="20" id="golden">
+            img/golden_retriever.png
+        </imagine>
+        <imagine tip="caine" w="20" h="20" id="beagle">
+            img/beagle.png
+        </imagine>
+        
+        <imagine tip="hrana" w="20" h="20" id="os">
+            img/hrana.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_1">
+            img/puncte_hranire/punct_1.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_2">
+            img/puncte_hranire/punct_2.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_3">
+            img/puncte_hranire/punct_3.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_4">
+            img/puncte_hranire/punct_4.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_5">
+            img/puncte_hranire/punct_5.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_6">
+            img/puncte_hranire/punct_6.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_7">
+            img/puncte_hranire/punct_7.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_8">
+            img/puncte_hranire/punct_8.png
+        </imagine>
+        <imagine tip="hrana" w="20" h="20" id="punct_9">
+            img/puncte_hranire/punct_9.png
+        </imagine>
+    </imagini>
+
+    <sunete>
+        <sunet id="latrat">
+            audio/ham.mp3
+        </sunet>
+        <sunet id="trist">
+            audio/planset.mp3
+        </sunet>
+        <sunet id="game_over">
+            audio/game_over.wav
+        </sunet>
+    </sunete>
+    
+</resurse> 
+
+</xs:schema>

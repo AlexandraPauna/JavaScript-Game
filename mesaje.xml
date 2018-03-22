@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<lang>
+    <mesaje lang="ro">
+        <mesaj id="game_over">
+            Nu mai ai vieti!
+        </mesaj>
+        <mesaj id="atentie">
+            Punctul de hrana nu poate fi folosit!
+        </mesaj>
+        <mesaj id="mort">
+            Unul dintre caini a murit!
+        </mesaj>
+        <mesaj id="scor">
+            Scor
+        </mesaj>              
+        <mesaj id="vieti">
+            Vieti
+        </mesaj>
+    </mesaje>
+    <mesaje lang="en">
+        <mesaj id="game_over">
+            You died!
+        </mesaj>
+        <mesaj id="atentie">
+            This feed point cannot be used!
+        </mesaj>
+        <mesaj id="mort">
+            One of your dogs is dead!
+        </mesaj>        
+        <mesaj id="scor">
+            Score
+        </mesaj>        
+        <mesaj id="vieti">
+            Lives
+        </mesaj>        
+        
+    </mesaje>
+</lang> 
+
+</xs:schema>

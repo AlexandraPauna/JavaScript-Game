@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<setari>
+    <nivele>
+        <incepator>
+            <nr_vieti>5</nr_vieti>
+            <nr_caini>7</nr_caini>
+        </incepator>
+        <mediu>
+            <nr_vieti>4</nr_vieti>
+            <nr_caini>9</nr_caini>
+        </mediu>
+        <avansat>
+            <nr_vieti>3</nr_vieti>
+            <nr_caini>10</nr_caini>
+        </avansat>
+    </nivele>
+
+    <caini>
+        <caine id="c1">
+            <nume>Golden Retriever</nume>
+            <imagine>golden</imagine><!-- id-ul imaginii corespunzatoare -->
+        </caine>
+        <caine id="c2">
+            <nume>Beagle</nume>
+            <imagine>beagle</imagine><!-- id-ul imaginii corespunzatoare -->
+        </caine>
+    </caini>
+    
+</setari> 
+
+</xs:schema>
